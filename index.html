@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,17 @@
   <link rel="stylesheet" href="assets/style.css">
   <title>Front End Challenge</title>
 </head>
+
 <body>
   <!-- =================== header =================== -->
   <header>
-    
+
+    <!-- Logo -->
     <a href="#">
       <img src="assets/images/logo_topo.png" alt="Logo_Inforce">
     </a>
-    
+
+    <!-- Navbar -->
     <nav>
       <ul>
         <li>
@@ -32,6 +36,50 @@
         </li>
       </ul>
     </nav>
+
   </header>
+
+  <main>
+    <section>
+      <!-- Slider -->
+      <div class="slider">
+
+        <div class="slides">
+          <!-- Radio Buttons -->
+          <input type="radio" name="radio-btn" id="radio-1">
+          <input type="radio" name="radio-btn" id="radio-2">
+          <input type="radio" name="radio-btn" id="radio-3">
+
+          <!-- Slide Images -->
+          <div class="slide first">
+            <img src="assets/images/ap-1.jpg" alt="imagem_apartamento">
+          </div>
+          <div class="slide">
+            <img src="assets/images/ap-2.jpg" alt="imagem_apartamento">
+          </div>
+          <div class="slide">
+            <img src="assets/images/ap-3.jpg" alt="imagem_apartamento">
+          </div>
+
+          <!-- Navigation Auto -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+          
+        </div>
+        
+        <div class="manual-navigation">
+          <label for="radio-1" class="manual-btn"></label>
+          <label for="radio-2" class="manual-btn"></label>
+          <label for="radio-3" class="manual-btn"></label>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
 </body>
+
 </html>
