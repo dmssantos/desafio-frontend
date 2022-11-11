@@ -6,7 +6,7 @@
   --color-second: #D5D0CD;
   --color-font: #00070C;
 
-/* ===== Buttons ===== */
+  /* ===== Buttons ===== */
   --border-radius: 2px;
 }
 
@@ -21,6 +21,8 @@
 
   text-decoration: none;
   color: var(--color-font);
+
+  font-family: 'montserrat', Helvetica, Arial, sans-serif;
 }
 
 /* ===== Header ===== */
@@ -46,7 +48,6 @@ header ul {
 }
 
 li {
-  font-family: 'montserrat' ,Helvetica ,Arial ,sans-serif;
   font-size: 0.75em;
   font-weight: 400;
   padding: 6px 13px;
@@ -86,6 +87,44 @@ li:hover {
 
 .slide img {
   width: 100%;
+  height: 500px;
+  position: absolute;
+}
+
+.action {
+  width: 100%;
+  margin-top: 360px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+}
+
+.text-in-slider {
+  width: 100%;
+  margin-top: 180px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+}
+
+.text-in-slider span {
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-second);
+}
+
+.action a {
+  padding: 6px 12px;
+  background-color: var(--color-second);
+  border-radius: var(--border-radius);
 }
 
 .manual-navigation {
@@ -112,16 +151,12 @@ li:hover {
   background-color: #fff;
 }
 
-#radio-1:checked ~ .first {
+#radio-1:checked~.first {
   margin-left: 0;
 }
 
-#radio-2:checked ~ .first {
+#radio-2:checked~.first {
   margin-left: -25%;
-}
-
-#radio-3:checked ~ .first {
-  margin-left: -50%;
 }
 
 .navigation-auto div {
@@ -144,16 +179,31 @@ li:hover {
   margin-right: 40px;
 }
 
-#radio-1:checked ~ .navigation-auto .auto-btn1 {
+#radio-1:checked~.navigation-auto .auto-btn1 {
   background-color: #fff;
 }
 
-#radio-2:checked ~ .navigation-auto .auto-btn2 {
+#radio-2:checked~.navigation-auto .auto-btn2 {
   background-color: #fff;
 }
 
-#radio-3:checked ~ .navigation-auto .auto-btn3 {
-  background-color: #fff;
+.call-to-action {
+  width: 100%;
+  margin-top: 360px;
+
+  position: absolute;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+}
+
+.call-to-action span {
+  padding: 6px 13px;
+
+  border-radius: var(--border-radius);
+
+  background-color: var(--color-primary);
 }
 
 /* ===== End ===== */
@@ -163,4 +213,5 @@ section {
   width: 100%;
   height: 500px;
 }
+
 /* ===== End ===== */
